@@ -1,0 +1,503 @@
+Virtual User Script started at: 19.05.2024 19:15:32
+Starting action vuser_init.
+Web Turbo Replay of LoadRunner 2021.0.0 for Windows 10; build 430 (џэт 05 2021 19:27:22)  	[MsgId: MMSG-26983]
+Run mode: HTML  	[MsgId: MMSG-26993]
+Replay user agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0  	[MsgId: MMSG-26988]
+Runtime Settings file: "C:\Users\vovab\Documents\VuGen\Scripts\UC_1\\default.cfg"  	[MsgId: MMSG-27141]
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Maximum number of concurrent connections per server: 6  	[MsgId: MMSG-26989]
+Starting action Action.
+Action.c(4): web_set_sockets_option started  	[MsgId: MMSG-26355]
+Action.c(4): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
+Action.c(6): web_add_auto_header("Accept-Language") started  	[MsgId: MMSG-26355]
+Action.c(6): web_add_auto_header("Accept-Language") was successful  	[MsgId: MMSG-26392]
+Action.c(9): Notify: Transaction "UC01_Login" started.
+Action.c(12): web_url("WebTours") started  	[MsgId: MMSG-26355]
+Action.c(12): web_url("WebTours") was successful, 366 body bytes, 298 header bytes  	[MsgId: MMSG-26386]
+Action.c(23): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(23): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(25): web_custom_request("home.html") started  	[MsgId: MMSG-26355]
+Action.c(25): Registered web_reg_find successful for "Text=Welcome to the Web Tours site." (count=1)  	[MsgId: MMSG-26364]
+Action.c(25): web_custom_request("home.html") was successful, 1361 body bytes, 298 header bytes  	[MsgId: MMSG-26386]
+Action.c(35): web_url("welcome.pl") started  	[MsgId: MMSG-26355]
+Action.c(35): web_url("welcome.pl") was successful, 686 body bytes, 327 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(45): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(45): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(53): web_url("nav.pl") started  	[MsgId: MMSG-26355]
+Action.c(53): web_url("nav.pl") was successful, 1488 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(62): web_websocket_send started  	[MsgId: MMSG-26355]
+Action.c(62): Warning -35046: The WebSocket whose ID is "1" is not connected  	[MsgId: MWAR-35046]
+Action.c(62): web_websocket_send highest severity level was "warning"  	[MsgId: MMSG-26391]
+Action.c(67): Notify: Transaction "UC01_Login" ended with a "Pass" status (Duration: 0,2529 Wasted Time: 0,0677).
+Action.c(71): Notify: Transaction "UC01_02_Login" started.
+Action.c(78): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(78): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(83): web_submit_data("login.pl") started  	[MsgId: MMSG-26355]
+Action.c(83): Registered web_reg_find successful for "Text=User password was not correct"  	[MsgId: MMSG-26362]
+Action.c(83): web_submit_data("login.pl") was successful, 456 body bytes, 228 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(99): web_url("login.pl_2") started  	[MsgId: MMSG-26355]
+Action.c(99): web_url("login.pl_2") was successful, 914 body bytes, 228 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(108): web_url("nav.pl_2") started  	[MsgId: MMSG-26355]
+Action.c(108): web_url("nav.pl_2") was successful, 1482 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(117): Notify: Transaction "UC01_02_Login" ended with a "Pass" status (Duration: 0,2209 Wasted Time: 0,0076).
+Action.c(121): Notify: Transaction "UC01_03_Exit" started.
+Action.c(125): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(125): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(128): web_url("SignOff Button") started  	[MsgId: MMSG-26355]
+Action.c(128): Registered web_reg_find successful for "Text=The server options can be set via the Admin page" (count=1)  	[MsgId: MMSG-26364]
+Action.c(128): web_url("SignOff Button") was successful, 686 body bytes, 327 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(137): web_url("home.html_2") started  	[MsgId: MMSG-26355]
+Action.c(137): Retrieving data from cache for "http://localhost:1080/WebTours/home.html"  	[MsgId: MMSG-26558]
+Action.c(137): web_url("home.html_2") was successful, 0 body bytes, 0 header bytes  	[MsgId: MMSG-26386]
+Action.c(145): web_url("nav.pl_3") started  	[MsgId: MMSG-26355]
+Action.c(145): web_url("nav.pl_3") was successful, 1486 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(154): Notify: Transaction "UC01_03_Exit" ended with a "Pass" status (Duration: 0,1436 Wasted Time: 0,0068).
+Ending action Action.
+Ending iteration 1.
+Starting iteration 2.
+Starting action Action.
+Action.c(4): web_set_sockets_option started  	[MsgId: MMSG-26355]
+Action.c(4): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
+Action.c(6): web_add_auto_header("Accept-Language") started  	[MsgId: MMSG-26355]
+Action.c(6): web_add_auto_header("Accept-Language") was successful  	[MsgId: MMSG-26392]
+Action.c(9): Notify: Transaction "UC01_Login" started.
+Action.c(12): web_url("WebTours") started  	[MsgId: MMSG-26355]
+Action.c(12): web_url("WebTours") was successful, 366 body bytes, 298 header bytes  	[MsgId: MMSG-26386]
+Action.c(23): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(23): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(25): web_custom_request("home.html") started  	[MsgId: MMSG-26355]
+Action.c(25): Registered web_reg_find successful for "Text=Welcome to the Web Tours site." (count=1)  	[MsgId: MMSG-26364]
+Action.c(25): web_custom_request("home.html") was successful, 1361 body bytes, 298 header bytes  	[MsgId: MMSG-26386]
+Action.c(35): web_url("welcome.pl") started  	[MsgId: MMSG-26355]
+Action.c(35): web_url("welcome.pl") was successful, 686 body bytes, 327 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(45): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(45): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(53): web_url("nav.pl") started  	[MsgId: MMSG-26355]
+Action.c(53): web_url("nav.pl") was successful, 1486 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(62): web_websocket_send started  	[MsgId: MMSG-26355]
+Action.c(62): Warning -35046: The WebSocket whose ID is "1" is not connected  	[MsgId: MWAR-35046]
+Action.c(62): web_websocket_send highest severity level was "warning"  	[MsgId: MMSG-26391]
+Action.c(67): Notify: Transaction "UC01_Login" ended with a "Pass" status (Duration: 0,1817 Wasted Time: 0,0168).
+Action.c(71): Notify: Transaction "UC01_02_Login" started.
+Action.c(78): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(78): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(83): web_submit_data("login.pl") started  	[MsgId: MMSG-26355]
+Action.c(83): Registered web_reg_find successful for "Text=User password was not correct"  	[MsgId: MMSG-26362]
+Action.c(83): web_submit_data("login.pl") was successful, 458 body bytes, 228 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(99): web_url("login.pl_2") started  	[MsgId: MMSG-26355]
+Action.c(99): web_url("login.pl_2") was successful, 914 body bytes, 228 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(108): web_url("nav.pl_2") started  	[MsgId: MMSG-26355]
+Action.c(108): web_url("nav.pl_2") was successful, 1482 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(117): Notify: Transaction "UC01_02_Login" ended with a "Pass" status (Duration: 0,2292 Wasted Time: 0,0127).
+Action.c(121): Notify: Transaction "UC01_03_Exit" started.
+Action.c(125): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(125): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(128): web_url("SignOff Button") started  	[MsgId: MMSG-26355]
+Action.c(128): Registered web_reg_find successful for "Text=The server options can be set via the Admin page" (count=1)  	[MsgId: MMSG-26364]
+Action.c(128): web_url("SignOff Button") was successful, 686 body bytes, 327 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(137): web_url("home.html_2") started  	[MsgId: MMSG-26355]
+Action.c(137): Retrieving data from cache for "http://localhost:1080/WebTours/home.html"  	[MsgId: MMSG-26558]
+Action.c(137): web_url("home.html_2") was successful, 0 body bytes, 0 header bytes  	[MsgId: MMSG-26386]
+Action.c(145): web_url("nav.pl_3") started  	[MsgId: MMSG-26355]
+Action.c(145): web_url("nav.pl_3") was successful, 1489 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(154): Notify: Transaction "UC01_03_Exit" ended with a "Pass" status (Duration: 0,1425 Wasted Time: 0,0122).
+Ending action Action.
+Ending iteration 2.
+Starting iteration 3.
+Starting action Action.
+Action.c(4): web_set_sockets_option started  	[MsgId: MMSG-26355]
+Action.c(4): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
+Action.c(6): web_add_auto_header("Accept-Language") started  	[MsgId: MMSG-26355]
+Action.c(6): web_add_auto_header("Accept-Language") was successful  	[MsgId: MMSG-26392]
+Action.c(9): Notify: Transaction "UC01_Login" started.
+Action.c(12): web_url("WebTours") started  	[MsgId: MMSG-26355]
+Action.c(12): web_url("WebTours") was successful, 366 body bytes, 298 header bytes  	[MsgId: MMSG-26386]
+Action.c(23): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(23): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(25): web_custom_request("home.html") started  	[MsgId: MMSG-26355]
+Action.c(25): Registered web_reg_find successful for "Text=Welcome to the Web Tours site." (count=1)  	[MsgId: MMSG-26364]
+Action.c(25): web_custom_request("home.html") was successful, 1361 body bytes, 298 header bytes  	[MsgId: MMSG-26386]
+Action.c(35): web_url("welcome.pl") started  	[MsgId: MMSG-26355]
+Action.c(35): web_url("welcome.pl") was successful, 686 body bytes, 327 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(45): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(45): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(53): web_url("nav.pl") started  	[MsgId: MMSG-26355]
+Action.c(53): web_url("nav.pl") was successful, 1489 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(62): web_websocket_send started  	[MsgId: MMSG-26355]
+Action.c(62): Warning -35046: The WebSocket whose ID is "1" is not connected  	[MsgId: MWAR-35046]
+Action.c(62): web_websocket_send highest severity level was "warning"  	[MsgId: MMSG-26391]
+Action.c(67): Notify: Transaction "UC01_Login" ended with a "Pass" status (Duration: 0,2077 Wasted Time: 0,0230).
+Action.c(71): Notify: Transaction "UC01_02_Login" started.
+Action.c(78): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(78): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(83): web_submit_data("login.pl") started  	[MsgId: MMSG-26355]
+Action.c(83): Registered web_reg_find successful for "Text=User password was not correct"  	[MsgId: MMSG-26362]
+Action.c(83): web_submit_data("login.pl") was successful, 466 body bytes, 228 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(99): web_url("login.pl_2") started  	[MsgId: MMSG-26355]
+Action.c(99): web_url("login.pl_2") was successful, 914 body bytes, 228 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(108): web_url("nav.pl_2") started  	[MsgId: MMSG-26355]
+Action.c(108): web_url("nav.pl_2") was successful, 1482 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(117): Notify: Transaction "UC01_02_Login" ended with a "Pass" status (Duration: 0,2369 Wasted Time: 0,0176).
+Action.c(121): Notify: Transaction "UC01_03_Exit" started.
+Action.c(125): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(125): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(128): web_url("SignOff Button") started  	[MsgId: MMSG-26355]
+Action.c(128): Registered web_reg_find successful for "Text=The server options can be set via the Admin page" (count=1)  	[MsgId: MMSG-26364]
+Action.c(128): web_url("SignOff Button") was successful, 686 body bytes, 327 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(137): web_url("home.html_2") started  	[MsgId: MMSG-26355]
+Action.c(137): Retrieving data from cache for "http://localhost:1080/WebTours/home.html"  	[MsgId: MMSG-26558]
+Action.c(137): web_url("home.html_2") was successful, 0 body bytes, 0 header bytes  	[MsgId: MMSG-26386]
+Action.c(145): web_url("nav.pl_3") started  	[MsgId: MMSG-26355]
+Action.c(145): web_url("nav.pl_3") was successful, 1489 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(154): Notify: Transaction "UC01_03_Exit" ended with a "Pass" status (Duration: 0,1573 Wasted Time: 0,0173).
+Ending action Action.
+Ending iteration 3.
+Starting iteration 4.
+Starting action Action.
+Action.c(4): web_set_sockets_option started  	[MsgId: MMSG-26355]
+Action.c(4): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
+Action.c(6): web_add_auto_header("Accept-Language") started  	[MsgId: MMSG-26355]
+Action.c(6): web_add_auto_header("Accept-Language") was successful  	[MsgId: MMSG-26392]
+Action.c(9): Notify: Transaction "UC01_Login" started.
+Action.c(12): web_url("WebTours") started  	[MsgId: MMSG-26355]
+Action.c(12): web_url("WebTours") was successful, 366 body bytes, 298 header bytes  	[MsgId: MMSG-26386]
+Action.c(23): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(23): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(25): web_custom_request("home.html") started  	[MsgId: MMSG-26355]
+Action.c(25): Registered web_reg_find successful for "Text=Welcome to the Web Tours site." (count=1)  	[MsgId: MMSG-26364]
+Action.c(25): web_custom_request("home.html") was successful, 1361 body bytes, 298 header bytes  	[MsgId: MMSG-26386]
+Action.c(35): web_url("welcome.pl") started  	[MsgId: MMSG-26355]
+Action.c(35): web_url("welcome.pl") was successful, 686 body bytes, 327 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(45): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(45): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(53): web_url("nav.pl") started  	[MsgId: MMSG-26355]
+Action.c(53): web_url("nav.pl") was successful, 1490 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(62): web_websocket_send started  	[MsgId: MMSG-26355]
+Action.c(62): Warning -35046: The WebSocket whose ID is "1" is not connected  	[MsgId: MWAR-35046]
+Action.c(62): web_websocket_send highest severity level was "warning"  	[MsgId: MMSG-26391]
+Action.c(67): Notify: Transaction "UC01_Login" ended with a "Pass" status (Duration: 0,2067 Wasted Time: 0,0297).
+Action.c(71): Notify: Transaction "UC01_02_Login" started.
+Action.c(78): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(78): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(83): web_submit_data("login.pl") started  	[MsgId: MMSG-26355]
+Action.c(83): Registered web_reg_find successful for "Text=User password was not correct"  	[MsgId: MMSG-26362]
+Action.c(83): web_submit_data("login.pl") was successful, 461 body bytes, 228 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(99): web_url("login.pl_2") started  	[MsgId: MMSG-26355]
+Action.c(99): web_url("login.pl_2") was successful, 914 body bytes, 228 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(108): web_url("nav.pl_2") started  	[MsgId: MMSG-26355]
+Action.c(108): web_url("nav.pl_2") was successful, 1482 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(117): Notify: Transaction "UC01_02_Login" ended with a "Pass" status (Duration: 0,2387 Wasted Time: 0,0228).
+Action.c(121): Notify: Transaction "UC01_03_Exit" started.
+Action.c(125): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(125): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(128): web_url("SignOff Button") started  	[MsgId: MMSG-26355]
+Action.c(128): Registered web_reg_find successful for "Text=The server options can be set via the Admin page" (count=1)  	[MsgId: MMSG-26364]
+Action.c(128): web_url("SignOff Button") was successful, 686 body bytes, 327 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(137): web_url("home.html_2") started  	[MsgId: MMSG-26355]
+Action.c(137): Retrieving data from cache for "http://localhost:1080/WebTours/home.html"  	[MsgId: MMSG-26558]
+Action.c(137): web_url("home.html_2") was successful, 0 body bytes, 0 header bytes  	[MsgId: MMSG-26386]
+Action.c(145): web_url("nav.pl_3") started  	[MsgId: MMSG-26355]
+Action.c(145): web_url("nav.pl_3") was successful, 1490 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(154): Notify: Transaction "UC01_03_Exit" ended with a "Pass" status (Duration: 0,1587 Wasted Time: 0,0220).
+Ending action Action.
+Ending iteration 4.
+Starting iteration 5.
+Starting action Action.
+Action.c(4): web_set_sockets_option started  	[MsgId: MMSG-26355]
+Action.c(4): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
+Action.c(6): web_add_auto_header("Accept-Language") started  	[MsgId: MMSG-26355]
+Action.c(6): web_add_auto_header("Accept-Language") was successful  	[MsgId: MMSG-26392]
+Action.c(9): Notify: Transaction "UC01_Login" started.
+Action.c(12): web_url("WebTours") started  	[MsgId: MMSG-26355]
+Action.c(12): web_url("WebTours") was successful, 366 body bytes, 298 header bytes  	[MsgId: MMSG-26386]
+Action.c(23): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(23): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(25): web_custom_request("home.html") started  	[MsgId: MMSG-26355]
+Action.c(25): Registered web_reg_find successful for "Text=Welcome to the Web Tours site." (count=1)  	[MsgId: MMSG-26364]
+Action.c(25): web_custom_request("home.html") was successful, 1361 body bytes, 298 header bytes  	[MsgId: MMSG-26386]
+Action.c(35): web_url("welcome.pl") started  	[MsgId: MMSG-26355]
+Action.c(35): web_url("welcome.pl") was successful, 686 body bytes, 327 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(45): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(45): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(53): web_url("nav.pl") started  	[MsgId: MMSG-26355]
+Action.c(53): web_url("nav.pl") was successful, 1490 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(62): web_websocket_send started  	[MsgId: MMSG-26355]
+Action.c(62): Warning -35046: The WebSocket whose ID is "1" is not connected  	[MsgId: MWAR-35046]
+Action.c(62): web_websocket_send highest severity level was "warning"  	[MsgId: MMSG-26391]
+Action.c(67): Notify: Transaction "UC01_Login" ended with a "Pass" status (Duration: 0,2030 Wasted Time: 0,0382).
+Action.c(71): Notify: Transaction "UC01_02_Login" started.
+Action.c(78): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(78): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(83): web_submit_data("login.pl") started  	[MsgId: MMSG-26355]
+Action.c(83): Registered web_reg_find successful for "Text=User password was not correct"  	[MsgId: MMSG-26362]
+Action.c(83): web_submit_data("login.pl") was successful, 462 body bytes, 228 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(99): web_url("login.pl_2") started  	[MsgId: MMSG-26355]
+Action.c(99): web_url("login.pl_2") was successful, 914 body bytes, 228 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(108): web_url("nav.pl_2") started  	[MsgId: MMSG-26355]
+Action.c(108): web_url("nav.pl_2") was successful, 1482 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(117): Notify: Transaction "UC01_02_Login" ended with a "Pass" status (Duration: 0,2383 Wasted Time: 0,0278).
+Action.c(121): Notify: Transaction "UC01_03_Exit" started.
+Action.c(125): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(125): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(128): web_url("SignOff Button") started  	[MsgId: MMSG-26355]
+Action.c(128): Registered web_reg_find successful for "Text=The server options can be set via the Admin page" (count=1)  	[MsgId: MMSG-26364]
+Action.c(128): web_url("SignOff Button") was successful, 686 body bytes, 327 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(137): web_url("home.html_2") started  	[MsgId: MMSG-26355]
+Action.c(137): Retrieving data from cache for "http://localhost:1080/WebTours/home.html"  	[MsgId: MMSG-26558]
+Action.c(137): web_url("home.html_2") was successful, 0 body bytes, 0 header bytes  	[MsgId: MMSG-26386]
+Action.c(145): web_url("nav.pl_3") started  	[MsgId: MMSG-26355]
+Action.c(145): web_url("nav.pl_3") was successful, 1481 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(154): Notify: Transaction "UC01_03_Exit" ended with a "Pass" status (Duration: 0,1578 Wasted Time: 0,0272).
+Ending action Action.
+Ending iteration 5.
+Starting iteration 6.
+Starting action Action.
+Action.c(4): web_set_sockets_option started  	[MsgId: MMSG-26355]
+Action.c(4): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
+Action.c(6): web_add_auto_header("Accept-Language") started  	[MsgId: MMSG-26355]
+Action.c(6): web_add_auto_header("Accept-Language") was successful  	[MsgId: MMSG-26392]
+Action.c(9): Notify: Transaction "UC01_Login" started.
+Action.c(12): web_url("WebTours") started  	[MsgId: MMSG-26355]
+Action.c(12): web_url("WebTours") was successful, 366 body bytes, 298 header bytes  	[MsgId: MMSG-26386]
+Action.c(23): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(23): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(25): web_custom_request("home.html") started  	[MsgId: MMSG-26355]
+Action.c(25): Registered web_reg_find successful for "Text=Welcome to the Web Tours site." (count=1)  	[MsgId: MMSG-26364]
+Action.c(25): web_custom_request("home.html") was successful, 1361 body bytes, 298 header bytes  	[MsgId: MMSG-26386]
+Action.c(35): web_url("welcome.pl") started  	[MsgId: MMSG-26355]
+Action.c(35): web_url("welcome.pl") was successful, 686 body bytes, 327 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(45): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(45): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(53): web_url("nav.pl") started  	[MsgId: MMSG-26355]
+Action.c(53): web_url("nav.pl") was successful, 1481 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(62): web_websocket_send started  	[MsgId: MMSG-26355]
+Action.c(62): Warning -35046: The WebSocket whose ID is "1" is not connected  	[MsgId: MWAR-35046]
+Action.c(62): web_websocket_send highest severity level was "warning"  	[MsgId: MMSG-26391]
+Action.c(67): Notify: Transaction "UC01_Login" ended with a "Pass" status (Duration: 0,2068 Wasted Time: 0,0442).
+Action.c(71): Notify: Transaction "UC01_02_Login" started.
+Action.c(78): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(78): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(83): web_submit_data("login.pl") started  	[MsgId: MMSG-26355]
+Action.c(83): Registered web_reg_find successful for "Text=User password was not correct"  	[MsgId: MMSG-26362]
+Action.c(83): web_submit_data("login.pl") was successful, 460 body bytes, 228 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(99): web_url("login.pl_2") started  	[MsgId: MMSG-26355]
+Action.c(99): web_url("login.pl_2") was successful, 914 body bytes, 228 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(108): web_url("nav.pl_2") started  	[MsgId: MMSG-26355]
+Action.c(108): web_url("nav.pl_2") was successful, 1482 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(117): Notify: Transaction "UC01_02_Login" ended with a "Pass" status (Duration: 0,2240 Wasted Time: 0,0333).
+Action.c(121): Notify: Transaction "UC01_03_Exit" started.
+Action.c(125): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(125): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(128): web_url("SignOff Button") started  	[MsgId: MMSG-26355]
+Action.c(128): Registered web_reg_find successful for "Text=The server options can be set via the Admin page" (count=1)  	[MsgId: MMSG-26364]
+Action.c(128): web_url("SignOff Button") was successful, 686 body bytes, 327 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(137): web_url("home.html_2") started  	[MsgId: MMSG-26355]
+Action.c(137): Retrieving data from cache for "http://localhost:1080/WebTours/home.html"  	[MsgId: MMSG-26558]
+Action.c(137): web_url("home.html_2") was successful, 0 body bytes, 0 header bytes  	[MsgId: MMSG-26386]
+Action.c(145): web_url("nav.pl_3") started  	[MsgId: MMSG-26355]
+Action.c(145): web_url("nav.pl_3") was successful, 1490 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(154): Notify: Transaction "UC01_03_Exit" ended with a "Pass" status (Duration: 0,1599 Wasted Time: 0,0327).
+Ending action Action.
+Ending iteration 6.
+Starting iteration 7.
+Starting action Action.
+Action.c(4): web_set_sockets_option started  	[MsgId: MMSG-26355]
+Action.c(4): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
+Action.c(6): web_add_auto_header("Accept-Language") started  	[MsgId: MMSG-26355]
+Action.c(6): web_add_auto_header("Accept-Language") was successful  	[MsgId: MMSG-26392]
+Action.c(9): Notify: Transaction "UC01_Login" started.
+Action.c(12): web_url("WebTours") started  	[MsgId: MMSG-26355]
+Action.c(12): web_url("WebTours") was successful, 366 body bytes, 298 header bytes  	[MsgId: MMSG-26386]
+Action.c(23): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(23): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(25): web_custom_request("home.html") started  	[MsgId: MMSG-26355]
+Action.c(25): Registered web_reg_find successful for "Text=Welcome to the Web Tours site." (count=1)  	[MsgId: MMSG-26364]
+Action.c(25): web_custom_request("home.html") was successful, 1361 body bytes, 298 header bytes  	[MsgId: MMSG-26386]
+Action.c(35): web_url("welcome.pl") started  	[MsgId: MMSG-26355]
+Action.c(35): web_url("welcome.pl") was successful, 686 body bytes, 327 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(45): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(45): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(53): web_url("nav.pl") started  	[MsgId: MMSG-26355]
+Action.c(53): web_url("nav.pl") was successful, 1490 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(62): web_websocket_send started  	[MsgId: MMSG-26355]
+Action.c(62): Warning -35046: The WebSocket whose ID is "1" is not connected  	[MsgId: MWAR-35046]
+Action.c(62): web_websocket_send highest severity level was "warning"  	[MsgId: MMSG-26391]
+Action.c(67): Notify: Transaction "UC01_Login" ended with a "Pass" status (Duration: 0,2400 Wasted Time: 0,0504).
+Action.c(71): Notify: Transaction "UC01_02_Login" started.
+Action.c(78): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(78): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(83): web_submit_data("login.pl") started  	[MsgId: MMSG-26355]
+Action.c(83): Registered web_reg_find successful for "Text=User password was not correct"  	[MsgId: MMSG-26362]
+Action.c(83): web_submit_data("login.pl") was successful, 461 body bytes, 228 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(99): web_url("login.pl_2") started  	[MsgId: MMSG-26355]
+Action.c(99): web_url("login.pl_2") was successful, 914 body bytes, 228 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(108): web_url("nav.pl_2") started  	[MsgId: MMSG-26355]
+Action.c(108): web_url("nav.pl_2") was successful, 1482 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(117): Notify: Transaction "UC01_02_Login" ended with a "Pass" status (Duration: 0,2390 Wasted Time: 0,0384).
+Action.c(121): Notify: Transaction "UC01_03_Exit" started.
+Action.c(125): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(125): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(128): web_url("SignOff Button") started  	[MsgId: MMSG-26355]
+Action.c(128): Registered web_reg_find successful for "Text=The server options can be set via the Admin page" (count=1)  	[MsgId: MMSG-26364]
+Action.c(128): web_url("SignOff Button") was successful, 686 body bytes, 327 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(137): web_url("home.html_2") started  	[MsgId: MMSG-26355]
+Action.c(137): Retrieving data from cache for "http://localhost:1080/WebTours/home.html"  	[MsgId: MMSG-26558]
+Action.c(137): web_url("home.html_2") was successful, 0 body bytes, 0 header bytes  	[MsgId: MMSG-26386]
+Action.c(145): web_url("nav.pl_3") started  	[MsgId: MMSG-26355]
+Action.c(145): web_url("nav.pl_3") was successful, 1490 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(154): Notify: Transaction "UC01_03_Exit" ended with a "Pass" status (Duration: 0,1567 Wasted Time: 0,0382).
+Ending action Action.
+Ending iteration 7.
+Starting iteration 8.
+Starting action Action.
+Action.c(4): web_set_sockets_option started  	[MsgId: MMSG-26355]
+Action.c(4): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
+Action.c(6): web_add_auto_header("Accept-Language") started  	[MsgId: MMSG-26355]
+Action.c(6): web_add_auto_header("Accept-Language") was successful  	[MsgId: MMSG-26392]
+Action.c(9): Notify: Transaction "UC01_Login" started.
+Action.c(12): web_url("WebTours") started  	[MsgId: MMSG-26355]
+Action.c(12): web_url("WebTours") was successful, 366 body bytes, 298 header bytes  	[MsgId: MMSG-26386]
+Action.c(23): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(23): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(25): web_custom_request("home.html") started  	[MsgId: MMSG-26355]
+Action.c(25): Registered web_reg_find successful for "Text=Welcome to the Web Tours site." (count=1)  	[MsgId: MMSG-26364]
+Action.c(25): web_custom_request("home.html") was successful, 1361 body bytes, 298 header bytes  	[MsgId: MMSG-26386]
+Action.c(35): web_url("welcome.pl") started  	[MsgId: MMSG-26355]
+Action.c(35): web_url("welcome.pl") was successful, 686 body bytes, 327 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(45): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(45): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(53): web_url("nav.pl") started  	[MsgId: MMSG-26355]
+Action.c(53): web_url("nav.pl") was successful, 1488 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(62): web_websocket_send started  	[MsgId: MMSG-26355]
+Action.c(62): Warning -35046: The WebSocket whose ID is "1" is not connected  	[MsgId: MWAR-35046]
+Action.c(62): web_websocket_send highest severity level was "warning"  	[MsgId: MMSG-26391]
+Action.c(67): Notify: Transaction "UC01_Login" ended with a "Pass" status (Duration: 0,2373 Wasted Time: 0,0584).
+Action.c(71): Notify: Transaction "UC01_02_Login" started.
+Action.c(78): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(78): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(83): web_submit_data("login.pl") started  	[MsgId: MMSG-26355]
+Action.c(83): Registered web_reg_find successful for "Text=User password was not correct"  	[MsgId: MMSG-26362]
+Action.c(83): web_submit_data("login.pl") was successful, 460 body bytes, 228 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(99): web_url("login.pl_2") started  	[MsgId: MMSG-26355]
+Action.c(99): web_url("login.pl_2") was successful, 914 body bytes, 228 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(108): web_url("nav.pl_2") started  	[MsgId: MMSG-26355]
+Action.c(108): web_url("nav.pl_2") was successful, 1482 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(117): Notify: Transaction "UC01_02_Login" ended with a "Pass" status (Duration: 0,2385 Wasted Time: 0,0433).
+Action.c(121): Notify: Transaction "UC01_03_Exit" started.
+Action.c(125): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(125): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(128): web_url("SignOff Button") started  	[MsgId: MMSG-26355]
+Action.c(128): Registered web_reg_find successful for "Text=The server options can be set via the Admin page" (count=1)  	[MsgId: MMSG-26364]
+Action.c(128): web_url("SignOff Button") was successful, 686 body bytes, 327 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(137): web_url("home.html_2") started  	[MsgId: MMSG-26355]
+Action.c(137): Retrieving data from cache for "http://localhost:1080/WebTours/home.html"  	[MsgId: MMSG-26558]
+Action.c(137): web_url("home.html_2") was successful, 0 body bytes, 0 header bytes  	[MsgId: MMSG-26386]
+Action.c(145): web_url("nav.pl_3") started  	[MsgId: MMSG-26355]
+Action.c(145): web_url("nav.pl_3") was successful, 1488 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(154): Notify: Transaction "UC01_03_Exit" ended with a "Pass" status (Duration: 0,1590 Wasted Time: 0,0442).
+Ending action Action.
+Ending iteration 8.
+Starting iteration 9.
+Starting action Action.
+Action.c(4): web_set_sockets_option started  	[MsgId: MMSG-26355]
+Action.c(4): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
+Action.c(6): web_add_auto_header("Accept-Language") started  	[MsgId: MMSG-26355]
+Action.c(6): web_add_auto_header("Accept-Language") was successful  	[MsgId: MMSG-26392]
+Action.c(9): Notify: Transaction "UC01_Login" started.
+Action.c(12): web_url("WebTours") started  	[MsgId: MMSG-26355]
+Action.c(12): web_url("WebTours") was successful, 366 body bytes, 298 header bytes  	[MsgId: MMSG-26386]
+Action.c(23): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(23): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(25): web_custom_request("home.html") started  	[MsgId: MMSG-26355]
+Action.c(25): Registered web_reg_find successful for "Text=Welcome to the Web Tours site." (count=1)  	[MsgId: MMSG-26364]
+Action.c(25): web_custom_request("home.html") was successful, 1361 body bytes, 298 header bytes  	[MsgId: MMSG-26386]
+Action.c(35): web_url("welcome.pl") started  	[MsgId: MMSG-26355]
+Action.c(35): web_url("welcome.pl") was successful, 686 body bytes, 327 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(45): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(45): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(53): web_url("nav.pl") started  	[MsgId: MMSG-26355]
+Action.c(53): web_url("nav.pl") was successful, 1488 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(62): web_websocket_send started  	[MsgId: MMSG-26355]
+Action.c(62): Warning -35046: The WebSocket whose ID is "1" is not connected  	[MsgId: MWAR-35046]
+Action.c(62): web_websocket_send highest severity level was "warning"  	[MsgId: MMSG-26391]
+Action.c(67): Notify: Transaction "UC01_Login" ended with a "Pass" status (Duration: 0,2343 Wasted Time: 0,0662).
+Action.c(71): Notify: Transaction "UC01_02_Login" started.
+Action.c(78): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(78): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(83): web_submit_data("login.pl") started  	[MsgId: MMSG-26355]
+Action.c(83): Registered web_reg_find successful for "Text=User password was not correct"  	[MsgId: MMSG-26362]
+Action.c(83): web_submit_data("login.pl") was successful, 462 body bytes, 228 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(99): web_url("login.pl_2") started  	[MsgId: MMSG-26355]
+Action.c(99): web_url("login.pl_2") was successful, 914 body bytes, 228 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(108): web_url("nav.pl_2") started  	[MsgId: MMSG-26355]
+Action.c(108): web_url("nav.pl_2") was successful, 1482 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(117): Notify: Transaction "UC01_02_Login" ended with a "Pass" status (Duration: 0,2397 Wasted Time: 0,0490).
+Action.c(121): Notify: Transaction "UC01_03_Exit" started.
+Action.c(125): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(125): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(128): web_url("SignOff Button") started  	[MsgId: MMSG-26355]
+Action.c(128): Registered web_reg_find successful for "Text=The server options can be set via the Admin page" (count=1)  	[MsgId: MMSG-26364]
+Action.c(128): web_url("SignOff Button") was successful, 686 body bytes, 327 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(137): web_url("home.html_2") started  	[MsgId: MMSG-26355]
+Action.c(137): Retrieving data from cache for "http://localhost:1080/WebTours/home.html"  	[MsgId: MMSG-26558]
+Action.c(137): web_url("home.html_2") was successful, 0 body bytes, 0 header bytes  	[MsgId: MMSG-26386]
+Action.c(145): web_url("nav.pl_3") started  	[MsgId: MMSG-26355]
+Action.c(145): web_url("nav.pl_3") was successful, 1486 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(154): Notify: Transaction "UC01_03_Exit" ended with a "Pass" status (Duration: 0,1579 Wasted Time: 0,0486).
+Ending action Action.
+Ending iteration 9.
+Starting iteration 10.
+Starting action Action.
+Action.c(4): web_set_sockets_option started  	[MsgId: MMSG-26355]
+Action.c(4): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
+Action.c(6): web_add_auto_header("Accept-Language") started  	[MsgId: MMSG-26355]
+Action.c(6): web_add_auto_header("Accept-Language") was successful  	[MsgId: MMSG-26392]
+Action.c(9): Notify: Transaction "UC01_Login" started.
+Action.c(12): web_url("WebTours") started  	[MsgId: MMSG-26355]
+Action.c(12): web_url("WebTours") was successful, 366 body bytes, 298 header bytes  	[MsgId: MMSG-26386]
+Action.c(23): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(23): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(25): web_custom_request("home.html") started  	[MsgId: MMSG-26355]
+Action.c(25): Registered web_reg_find successful for "Text=Welcome to the Web Tours site." (count=1)  	[MsgId: MMSG-26364]
+Action.c(25): web_custom_request("home.html") was successful, 1361 body bytes, 298 header bytes  	[MsgId: MMSG-26386]
+Action.c(35): web_url("welcome.pl") started  	[MsgId: MMSG-26355]
+Action.c(35): web_url("welcome.pl") was successful, 686 body bytes, 327 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(45): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(45): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(53): web_url("nav.pl") started  	[MsgId: MMSG-26355]
+Action.c(53): web_url("nav.pl") was successful, 1486 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(62): web_websocket_send started  	[MsgId: MMSG-26355]
+Action.c(62): Warning -35046: The WebSocket whose ID is "1" is not connected  	[MsgId: MWAR-35046]
+Action.c(62): web_websocket_send highest severity level was "warning"  	[MsgId: MMSG-26391]
+Action.c(67): Notify: Transaction "UC01_Login" ended with a "Pass" status (Duration: 0,2375 Wasted Time: 0,0734).
+Action.c(71): Notify: Transaction "UC01_02_Login" started.
+Action.c(78): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(78): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(83): web_submit_data("login.pl") started  	[MsgId: MMSG-26355]
+Action.c(83): Registered web_reg_find successful for "Text=User password was not correct"  	[MsgId: MMSG-26362]
+Action.c(83): web_submit_data("login.pl") was successful, 462 body bytes, 228 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(99): web_url("login.pl_2") started  	[MsgId: MMSG-26355]
+Action.c(99): web_url("login.pl_2") was successful, 914 body bytes, 228 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(108): web_url("nav.pl_2") started  	[MsgId: MMSG-26355]
+Action.c(108): web_url("nav.pl_2") was successful, 1482 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(117): Notify: Transaction "UC01_02_Login" ended with a "Pass" status (Duration: 0,2334 Wasted Time: 0,0545).
+Action.c(121): Notify: Transaction "UC01_03_Exit" started.
+Action.c(125): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(125): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(128): web_url("SignOff Button") started  	[MsgId: MMSG-26355]
+Action.c(128): Registered web_reg_find successful for "Text=The server options can be set via the Admin page" (count=1)  	[MsgId: MMSG-26364]
+Action.c(128): web_url("SignOff Button") was successful, 686 body bytes, 327 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(137): web_url("home.html_2") started  	[MsgId: MMSG-26355]
+Action.c(137): Retrieving data from cache for "http://localhost:1080/WebTours/home.html"  	[MsgId: MMSG-26558]
+Action.c(137): web_url("home.html_2") was successful, 0 body bytes, 0 header bytes  	[MsgId: MMSG-26386]
+Action.c(145): web_url("nav.pl_3") started  	[MsgId: MMSG-26355]
+Action.c(145): web_url("nav.pl_3") was successful, 1488 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(154): Notify: Transaction "UC01_03_Exit" ended with a "Pass" status (Duration: 0,1510 Wasted Time: 0,0541).
+Ending action Action.
+Ending iteration 10.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.
