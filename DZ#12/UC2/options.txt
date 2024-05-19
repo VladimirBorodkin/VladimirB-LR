@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IC:\Users\vovab\Documents\VuGen\Scripts\UC_2_ticket _search
+-IC:\Program Files (x86)\Micro Focus\LoadRunner\include
+-ec:\users\vovab\documents\vugen\scripts\uc_2_ticket _search\\logfile.log
+c:\users\vovab\documents\vugen\scripts\uc_2_ticket _search\\combined_UC_2_ticket _search.c
+c:\users\vovab\documents\vugen\scripts\uc_2_ticket _search\\pre_cci.c
